@@ -16,7 +16,7 @@ class App extends Component {
                             key={key[0]}
                             label={key[0]}
                             tones={key[1]}
-                            handleClick={tones => console.log(tones)}/>)}
+                            handleClick={tones => alert(`${tones[0]},${tones[1]}`)}/>)}
             </StyledKeypadRow>
         );
 
