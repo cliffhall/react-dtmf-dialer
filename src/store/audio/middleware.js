@@ -13,6 +13,9 @@ export const audioMiddleware = store => {
                 touchTone.play(action.tones);
                 break;
 
+            default:
+                break;
+
         }
 
         next(action);
