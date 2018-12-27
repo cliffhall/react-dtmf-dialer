@@ -20,7 +20,7 @@ e.g., 'play these two tones'. However reducers are meant to manage serializable
 application state. A Web Audio system is not a serializable thing and has no place 
 being handled in a reducer. Instead, we handle such things with middleware. 
 
-This demo and the accompanying video demonstrate how to achieve that.
+This demo and [the accompanying video](https://youtu.be/zps9YDPJha0) demonstrate how to achieve that.
 
 ## Setup
 
