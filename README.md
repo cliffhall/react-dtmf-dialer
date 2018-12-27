@@ -17,7 +17,7 @@ question is how to interface such an audio system with a React/Redux application
 
 With React/Redux, reducers generally handle actions that we dispatch from the UI,
 e.g., 'play these two tones'. However reducers are meant to manage serializable 
-application state. A Web Audio system is not a serializable thing and has no place 
+application state. A Web Audio system is not a serializable object and has no place 
 being handled in a reducer. Instead, we handle such things with middleware. 
 
 This demo and [the accompanying video](https://youtu.be/zps9YDPJha0) demonstrate how to achieve that.
