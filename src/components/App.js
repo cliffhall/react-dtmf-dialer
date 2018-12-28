@@ -11,27 +11,22 @@ import {playDTMFPair} from '../store/audio/actions';
 // Main App component
 class App extends Component {
 
-    renderKeyPad = () => {
+    render() {
 
         const {playTones} = this.props;
 
-        return KEYPAD.map( (row, rindex) =>
-            <StyledKeypadRow key={rindex}>
-                {row.map( key => <KeypadKey
-                            key={key[0]}
-                            label={key[0]}
-                            tones={key[1]}
-                            handleClick={playTones}/>)}
-            </StyledKeypadRow>
-        );
-
-    };
-
-    // Render the component
-    render() {
         return <StyledKeypad>
 
-            {this.renderKeyPad()}
+            {
+                KEYPAD.map( (row, rindex) =>
+                <StyledKeypadRow key={rindex}>
+                    {row.map( key => <KeypadKey
+                        key={key[0]}
+                        label={key[0]}
+                        tones={key[1]}
+                        handleClick={playTones}/>)}
+                </StyledKeypadRow>)
+            }
 
         </StyledKeypad>;
     }
