@@ -8,7 +8,6 @@ import {StyledKeypadRow} from '../styles/StyledKeypadRow';
 
 import {playDTMFPair} from '../store/audio/actions';
 
-// Main App component
 class App extends Component {
 
     render() {
@@ -30,7 +29,6 @@ class App extends Component {
     }
 }
 
-// Map dispatch function into props
 const mapDispatchToProps = (dispatch) => ({
     playTones: tones => dispatch(playDTMFPair(tones))
 });
