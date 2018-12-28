@@ -16,7 +16,6 @@ class App extends Component {
         const {playTones} = this.props;
 
         return <StyledKeypad>
-
             {
                 KEYPAD.map( (row, rindex) =>
                 <StyledKeypadRow key={rindex}>
@@ -27,7 +26,6 @@ class App extends Component {
                         handleClick={playTones}/>)}
                 </StyledKeypadRow>)
             }
-
         </StyledKeypad>;
     }
 }
