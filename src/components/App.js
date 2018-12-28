@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 import {KEYPAD} from '../constants/dtmf';
 import {playDTMFPair} from '../store/audio/actions';
