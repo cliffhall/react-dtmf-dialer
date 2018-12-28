@@ -5,7 +5,6 @@ import {KEYPAD} from '../constants/dtmf';
 import KeypadKey from './KeypadKey';
 import {StyledKeypad} from '../styles/StyledKeypad';
 import {StyledKeypadRow} from '../styles/StyledKeypadRow';
-
 import {playDTMFPair} from '../store/audio/actions';
 
 class App extends Component {
