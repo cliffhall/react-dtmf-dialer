@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import {KEYPAD} from '../constants/dtmf';
-import KeypadKey from './KeypadKey';
+import {playDTMFPair} from '../store/audio/actions';
 import {StyledKeypad} from '../styles/StyledKeypad';
 import {StyledKeypadRow} from '../styles/StyledKeypadRow';
-import {playDTMFPair} from '../store/audio/actions';
+import KeypadKey from './KeypadKey';
 
 class App extends Component {
 
